@@ -137,7 +137,7 @@ def main():
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
 
       st.sidebar.table(arts)
-      st.sidebar.table(creation)
+      st.sidebar.dataframe(creation)
       st.sidebar.table(finance)
       st.sidebar.table(facilities)
       st.sidebar.table(enjoyment)
