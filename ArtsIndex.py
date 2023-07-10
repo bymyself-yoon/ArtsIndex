@@ -87,7 +87,7 @@ def main():
   st.sidebar.header("지역커뮤니티의 예술 활력을 탐험하기")
   
   ## main content
-  st.title("Art Vibrancy Index Map")
+  st.title("Art Index Map")
 
   # add layer: Choropleth
   folium.Choropleth(
