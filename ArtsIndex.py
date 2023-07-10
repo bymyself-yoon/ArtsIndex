@@ -136,7 +136,7 @@ def main():
       # write sub-indices
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
 
-      st.sidebar.write(arts)
+      st.sidebar.write(arts.item)
       st.sidebar.table(creation)
       st.sidebar.table(finance)
       st.sidebar.table(facilities)
