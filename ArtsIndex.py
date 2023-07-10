@@ -79,7 +79,7 @@ def select_top_communities(cmd):
 
 
 '''
-  Arts Vibrancy Index WebApp
+  Arts Index WebApp
 '''
 def main():
   # initialize
