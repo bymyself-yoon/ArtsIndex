@@ -98,7 +98,7 @@ def main():
       fill_color = 'BuPu',
       legend_name = '문화예술지수',
   ).add_to(m)
-  colormap = branca.colormap.linear.BuPu.scale(0, 255)
+  colormap = branca.colormap.linear.YlOrRd_09.scale(0, 255)
   colormap = colormap.to_step(index=[0, 100, 150, 200, 255])
   caption = '문화예술지수'
   colormap.add_to(m)
