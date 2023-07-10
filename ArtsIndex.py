@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import folium
 import geopandas as gpd
+import branca
 from streamlit_folium import st_folium
 
 def set_page_config():
@@ -97,6 +98,10 @@ def main():
       fill_color = 'BuPu',
       legend_name = '문화예술지수',
   ).add_to(m)
+  colormap = branca.colormap.linear.BuPu.scale(0, 8500)
+  colormap = colormap.to_step(index=[0, 1000, 3000, 5000, 8500])
+  caption = '문화예술지수'
+  colormap.add_to(m)
 
   # add layer: carto
   tiles = "CartoDB positron"
