@@ -141,9 +141,10 @@ def main():
       def draw_color_cell(x,color):
          color = f'background-color:{color}'
          return color
- 
-      creation.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
 
+      creation2 = pd.IndexSlice[0, 0]
+      st.write(creation2)
+      # creation.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
     
       # write sub-indices
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
