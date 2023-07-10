@@ -96,11 +96,11 @@ def main():
       columns = ('sggnm', '예술활력지수'),
       key_on = 'feature.properties.sggnm',
       fill_color = 'BuPu',
-      legend_name = '문화예술지수',
+      legend_name = '예술활력지수',
   ).add_to(m)
   colormap = branca.colormap.linear.YlOrRd_09.scale(0, 8500)
   colormap = colormap.to_step(index=[0, 1000, 3000, 5000, 8500])
-  caption = '문화예술지수'
+  caption = '예술활력지수'
   colormap.add_to(m)
 
   # add layer: carto
