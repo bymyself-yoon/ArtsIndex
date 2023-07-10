@@ -139,10 +139,10 @@ def main():
       # print(filtered_df)
 
       def draw_color_cell(x,color):
-      color = f'background-color:{color}'
-        return color
+         color = f'background-color:{color}'
+         return color
  
-      arts.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
+      creation.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
 
     
       # write sub-indices
