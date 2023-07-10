@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import folium
 import geopandas as gpd
+import branca
 from streamlit_folium import st_folium
 
 def set_page_config():
