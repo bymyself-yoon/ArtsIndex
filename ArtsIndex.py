@@ -142,8 +142,8 @@ def main():
          color = f'background-color:{color}'
          return color
 
-      creation2 = pd.IndexSlice[0, 0]
-      st.write(creation2)
+      creation_subset = creation.loc[pd.IndexSlice[0], pd.IndexSlice[0]]
+      st.write(creation_subset)
       # creation.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
     
       # write sub-indices
