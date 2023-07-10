@@ -141,13 +141,24 @@ def main():
       # write sub-indices
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
 
-      st.sidebar.table(arts)
-      st.sidebar.table(creation)
-      st.sidebar.table(finance)
-      st.sidebar.table(facilities)
-      st.sidebar.table(enjoyment)
-      st.sidebar.table(achievement)
+      # st.sidebar.table(arts)
+      # st.sidebar.table(creation)
+      # st.sidebar.table(finance)
+      # st.sidebar.table(facilities)
+      # st.sidebar.table(enjoyment)
+      # st.sidebar.table(achievement)
 
+      def draw_color_cell(x, color):
+    if x.name == 0 and x.index == 0:
+        color = f'background-color:{color}'
+    return color
+
+      st.sidebar.table(arts.style.applymap(draw_color_cell, color='#ff9090'))
+      st.sidebar.table(creation.style.applymap(draw_color_cell, color='#ff9090'))
+      st.sidebar.table(finance.style.applymap(draw_color_cell, color='#ff9090'))
+      st.sidebar.table(facilities.style.applymap(draw_color_cell, color='#ff9090'))
+      st.sidebar.table(enjoyment.style.applymap(draw_color_cell, color='#ff9090'))
+      st.sidebar.table(achievement.style.applymap(draw_color_cell, color='#ff9090'))
       
 if __name__ == '__main__':
     main()
