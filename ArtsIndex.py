@@ -95,7 +95,7 @@ def main():
       columns = ('sggnm', '예술활력지수'),
       key_on = 'feature.properties.sggnm',
       fill_color = 'BuPu',
-      legend_name = 'Arts Vibrancy Index',
+      legend_name = '문화예술지수',
   ).add_to(m)
 
   # add layer: carto
