@@ -137,14 +137,6 @@ def main():
       achievement = filtered_df.iloc[[37, 28, 29, 30, 31, 32, 33, 34, 35, 36]]
       arts = filtered_df.iloc[[38]]
       # print(filtered_df)
-
-      def draw_color_cell(x,color):
-         color = f'background-color:{color}'
-         return color
-
-      creation_subset = creation.loc[pd.IndexSlice[0], pd.IndexSlice[0]]
-      st.write(creation_subset)
-      # creation.style.applymap(draw_color_cell,color='#ff9090',subset=pd.IndexSlice[0, 0])
     
       # write sub-indices
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
