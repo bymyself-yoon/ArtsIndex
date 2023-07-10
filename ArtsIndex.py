@@ -138,36 +138,15 @@ def main():
       arts = filtered_df.iloc[[38]]
       # print(filtered_df)
 
-      def draw_color_cell(x, color):
-        if x.name == 0 and x.index == 0:
-            return f'background-color: {color}'
-        return ''
-    
       # write sub-indices
-      # st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
-
-      # st.sidebar.table(arts)
-      # st.sidebar.table(creation)
-      # st.sidebar.table(finance)
-      # st.sidebar.table(facilities)
-      # st.sidebar.table(enjoyment)
-      # st.sidebar.table(achievement)
-
-      arts_styled = arts.style.applymap(draw_color_cell, color='#ff9090').render()
-      creation_styled = creation.style.applymap(draw_color_cell, color='#ff9090').render()
-      finance_styled = finance.style.applymap(draw_color_cell, color='#ff9090').render()
-      facilities_styled = facilities.style.applymap(draw_color_cell, color='#ff9090').render()
-      enjoyment_styled = enjoyment.style.applymap(draw_color_cell, color='#ff9090').render()
-      achievement_styled = achievement.style.applymap(draw_color_cell, color='#ff9090').render()
-
       st.sidebar.write(f"**{clicked_sidonm}**  **{clicked_sggnm}**")
-      st.sidebar.write(arts_styled, unsafe_allow_html=True)
-      st.sidebar.write(creation_styled, unsafe_allow_html=True)
-      st.sidebar.write(finance_styled, unsafe_allow_html=True)
-      st.sidebar.write(facilities_styled, unsafe_allow_html=True)
-      st.sidebar.write(enjoyment_styled, unsafe_allow_html=True)
-      st.sidebar.write(achievement_styled, unsafe_allow_html=True)
 
-      
+      st.sidebar.table(arts)
+      st.sidebar.table(creation)
+      st.sidebar.table(finance)
+      st.sidebar.table(facilities)
+      st.sidebar.table(enjoyment)
+      st.sidebar.table(achievement)
+     
 if __name__ == '__main__':
     main()
